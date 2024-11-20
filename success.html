@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/sucess.css">
+    <title>Página de Sucesso</title>
+
+</head>
+
+<body>
+    <div class="todo">
+        <div class="logo">
+            <img src="img/logonovo.png" alt="">
+        </div>
+        <h1>Contrato Aceito com Sucesso!</h1>
+        <div class="result-container">
+            <div class="result-message" id="resultado"></div>
+        </div>
+    </div>
+    <script>
+        // Função para obter parâmetros da URL
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            const results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Captura os parâmetros
+        const codigoContrato = getUrlParameter('codigo_contrato');
+        const nomeCliente = getUrlParameter('nome_cliente');
+
+        // Exibe as informações na página
+        document.getElementById('resultado').innerHTML = `
+            <p>Código do Contrato: <strong>${codigoContrato}</strong></p>
+            <p>Nome do Cliente: <strong>${nomeCliente}</strong></p>
+        `;
+
+
+
+        // Redireciona para netcol.com.br após 15 segundos
+        setTimeout(() => {
+            window.location.href = "https://netcol.com.br";
+        }, 15000); // 15000 ms = 15 segundos
+    </script>
+</body>
+
+</html>

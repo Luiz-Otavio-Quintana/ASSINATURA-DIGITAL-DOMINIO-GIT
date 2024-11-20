@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    /* Cor de fundo suave */
+}
+
+.container {
+    text-align: center;
+}
+
+.central-image {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    /* Espaço entre a imagem e o botão */
+}
+
+.btn-proceder {
+    background-color: #28a745;
+    /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-proceder:hover {
+    background-color: #218838;
+    /* Verde mais escuro no hover */
+}

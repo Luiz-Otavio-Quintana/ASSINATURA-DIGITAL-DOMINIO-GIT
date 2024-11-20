@@ -1,0 +1,95 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-block {
+    border-radius: 0;
+}
+
+.btn2_div {
+    display: flex;
+    justify-content: center;
+}
+
+.btn2 {
+    display: block;
+    margin: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 6px;
+    /* Padding maior para botões */
+    font-size: 14px;
+    /* Aumento no tamanho da fonte */
+    color: #ffffff;
+    background-color: #28a745;
+    /* Verde */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    /* Efeitos de transição */
+    width: 20%;
+}
+
+.btn2:hover {
+    background-color: #218838;
+    /* Verde escuro ao passar o mouse */
+    transform: translateY(-2px);
+    /* Efeito de movimento ao passar o mouse */
+}
+
+
+
+.btn2_v {
+    display: block;
+    margin: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 6px;
+    /* Padding maior para botões */
+    font-size: 14px;
+    /* Aumento no tamanho da fonte */
+    color: #ffffff;
+    background-color: #a74428;
+    /* Verde */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    /* Efeitos de transição */
+    width: 20%;
+}
+
+.btn2_v:hover {
+    background-color: #882121;
+    /* Verde escuro ao passar o mouse */
+    transform: translateY(-2px);
+    /* Efeito de movimento ao passar o mouse */
+}

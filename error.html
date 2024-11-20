@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/error.css">
+    <title>Página de Erro</title>
+
+</head>
+
+<body>
+    <div class="todo">
+        <div class="logo">
+            <img src="img/logonovo.png" alt="">
+        </div>
+        <h1>Ocorreu um Erro!</h1>
+        <div class="error-container">
+            <div class="error-message" id="resultado"></div>
+        </div>
+    </div>
+    <script>
+        // Função para obter parâmetros da URL
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            const results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Captura o parâmetro de mensagem de erro
+        const mensagemErro = getUrlParameter('mensagem');
+
+        // Exibe a mensagem de erro na página
+        document.getElementById('resultado').innerHTML = mensagemErro || 'Erro desconhecido. Tente novamente mais tarde.';
+    </script>
+</body>
+
+</html>

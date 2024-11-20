@@ -1,0 +1,404 @@
+/* Reseta margens e paddings e define o box-sizing para border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza parágrafos com uma margem uniforme */
+p {
+    margin: 1%;
+    text-align: center;
+}
+
+/* Estilos gerais do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container centralizado com sombra e espaçamento */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da logo com espaçamento entre a logo e o restante do conteúdo */
+.logo {
+    width: 70%;
+    margin: 0 auto 20px;
+}
+
+/* A logo ajusta-se ao tamanho do container */
+.logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.captura {
+    width: 50%;
+    margin: auto;
+    padding: 1%;
+}
+
+.captura img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Títulos centrados e com margens para separação */
+h1,
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Espaçamento para as áreas de assinatura e captura de foto */
+/* .signature-display,
+.photo-capture {
+    margin-bottom: 30px;
+} */
+
+.photo-capture h4 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+/* Canvas de assinatura com borda e centralizado */
+#signatureCanvas {
+    border: 1px solid #000;
+    width: 100%;
+    height: auto;
+    cursor: crosshair;
+    margin-bottom: 10px;
+}
+
+#hasDigitalDocument {
+    text-align: center;
+}
+
+#uploud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 16px;
+    text-align: center;
+}
+
+#uploud input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+#uploadField {
+    display: none;
+    /* Exibido apenas quando o checkbox é marcado */
+    margin-top: 10px;
+    text-align: center;
+    /* Centraliza o conteúdo */
+}
+
+#uploadField label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #b70606;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#uploadField input[type="file"] {
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    color: #555;
+    background-color: #f9f9f9;
+    margin-bottom: 3%;
+}
+
+#uploadField input[type="file"]::file-selector-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#uploadField input[type="file"]::file-selector-button:hover {
+    background-color: #45a049;
+}
+
+/* Vídeo de captura com borda, centralizado e arredondado */
+#video {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Botões estilizados ocupando toda a largura e com transição suave */
+#captureButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+#sendButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #2855a7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.contract-code {
+    display: none;
+}
+
+#captureButton:hover {
+    background-color: #218838;
+    /* Cor verde mais escura no hover */
+}
+
+#sendButton:hover {
+    background-color: #212b88;
+    /* Cor verde mais escura no hover */
+}
+
+/* Inputs de texto com largura total, espaçamento e bordas arredondadas */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Foco no input com borda verde */
+input[type="text"]:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+/* Espaçamento extra para o campo de código do cliente */
+.client-code {
+    margin-top: 20px;
+}
+
+/* Estilo da foto capturada com bordas e centralização */
+#photo {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .logo {
+        width: 90%;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .container {
+        width: 100%;
+        /* Aumenta a largura para ocupar toda a tela */
+        padding: 10px;
+        /* Ajusta o padding para não ficar muito apertado */
+        margin: 0;
+        /* Remove a margem */
+    }
+
+    .logo {
+        width: 90%;
+        /* Ajusta a largura da logo */
+    }
+
+    h1,
+    h2 {
+        font-size: 1.3em;
+        /* Ajusta o tamanho da fonte dos títulos */
+        margin-bottom: 15px;
+        /* Margem inferior ajustada */
+    }
+
+    p {
+        font-size: 14px;
+        /* Ajusta o tamanho da fonte dos parágrafos */
+    }
+
+    input[type="text"] {
+        padding: 8px;
+        /* Ajusta o padding dos inputs */
+    }
+
+    #uploadField input[type="file"] {
+        width: 100%;
+        /* Ajusta a largura do input de arquivo */
+    }
+
+    button {
+        font-size: 14px;
+        /* Ajusta o tamanho da fonte dos botões */
+        padding: 8px;
+        /* Ajusta o padding dos botões */
+    }
+
+    #signatureCanvas,
+    #video {
+        width: 100%;
+        /* Ajusta a largura do canvas e do vídeo */
+        height: auto;
+        /* Mantém a proporção */
+    }
+
+    #captureButton,
+    #sendButton {
+        font-size: 14px;
+        /* Ajusta o tamanho da fonte dos botões */
+        padding: 8px;
+        /* Ajusta o padding dos botões */
+    }
+
+    #hasDigitalDocument {
+        font-size: 14px;
+        /* Ajusta o tamanho da fonte do checkbox */
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 100%;
+        /* Aumenta a largura para ocupar toda a tela */
+        padding: 5px;
+        /* Reduz o padding */
+        margin: 0;
+        /* Remove a margem */
+    }
+
+    .logo {
+        width: 90%;
+        /* Ajusta a largura da logo */
+    }
+
+    h1,
+    h2 {
+        font-size: 1.2em;
+        /* Reduz o tamanho da fonte dos títulos */
+        margin-bottom: 15px;
+        /* Reduz a margem inferior */
+    }
+
+    p {
+        font-size: 14px;
+        /* Ajusta o tamanho da fonte dos parágrafos */
+    }
+
+    input[type="text"] {
+        padding: 8px;
+        /* Reduz o padding dos inputs */
+    }
+
+    #uploadField input[type="file"] {
+        width: 100%;
+        /* Ajusta a largura do input de arquivo */
+    }
+
+    button {
+        font-size: 14px;
+        /* Ajusta o tamanho da fonte dos botões */
+        padding: 8px;
+        /* Ajusta o padding dos botões */
+    }
+
+    #signatureCanvas,
+    #video {
+        width: 100%;
+        /* Ajusta a largura do canvas e do vídeo */
+        height: auto;
+        /* Mantém a proporção */
+    }
+
+    #captureButton,
+    #sendButton {
+        font-size: 14px;
+        /* Ajusta o tamanho da fonte dos botões */
+        padding: 8px;
+        /* Ajusta o padding dos botões */
+    }
+
+    #hasDigitalDocument {
+        font-size: 14px;
+        /* Ajusta o tamanho da fonte do checkbox */
+    }
+}

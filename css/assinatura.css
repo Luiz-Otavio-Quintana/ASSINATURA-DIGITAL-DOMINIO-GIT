@@ -1,0 +1,187 @@
+/* Estilos gerais */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    /* Fundo suave */
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* Cor padrão de texto */
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    /* Máxima largura para evitar excessos */
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    margin: 20px auto;
+    /* Centralização e espaçamento */
+}
+
+/* Logo */
+.logo {
+    width: 70%;
+    margin: 0 auto 20px;
+    /* Centraliza e separa da área abaixo */
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    /* Suaviza as bordas */
+}
+
+/* Imagem central */
+.central-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    /* Espaçamento inferior */
+}
+
+/* Botão principal */
+.btn-proceder {
+    background-color: #28a745;
+    /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+    max-width: 300px;
+    /* Limite de largura */
+}
+
+.btn-proceder:hover {
+    background-color: #218838;
+    /* Verde mais escuro */
+    transform: scale(1.03);
+    /* Pequeno zoom no hover */
+}
+
+/* Área de assinatura */
+.signature-area {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    /* Fundo claro */
+    border-radius: 10px;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra interna */
+}
+
+canvas {
+    border: 2px dashed #ccc;
+    /* Linha tracejada */
+    width: 100%;
+    /* Preenche o container */
+    height: auto;
+    cursor: crosshair;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    /* Suaviza bordas */
+}
+
+/* Botões de controle */
+button {
+    margin: 5px 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 14px;
+    width: 48%;
+    /* Divide em 2 colunas lado a lado */
+    box-sizing: border-box;
+    /* Garante o tamanho correto */
+}
+
+#palco {
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/* Botão de limpar */
+#clearButton {
+    background-color: #c82333;
+    /* Vermelho */
+    color: white;
+}
+
+#clearButton:hover {
+    background-color: #a71d2a;
+    /* Vermelho mais escuro */
+    transform: scale(1.03);
+    /* Zoom leve */
+}
+
+/* Botão de salvar */
+#saveButton {
+    background-color: #28a745;
+    /* Verde */
+    color: white;
+}
+
+#saveButton:hover {
+    background-color: #218838;
+    /* Verde mais escuro */
+    transform: scale(1.03);
+    /* Zoom leve */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+        /* Reduz o padding */
+    }
+
+    .btn-proceder {
+        font-size: 14px;
+        padding: 8px 15px;
+        /* Ajuste do tamanho */
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 10px;
+        width: 100%;
+        /* Botões ocupam largura total */
+        margin: 5px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 80%;
+        /* Ocupa mais espaço em telas pequenas */
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,264 @@
+/* Reset básico para garantir consistência em todos os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    /* Fundo mais suave */
+    color: #333;
+    line-height: 1.6;
+    /* Aumenta a legibilidade */
+}
+
+/* Estilização do container principal do encurtador */
+.encurtador {
+    width: 90%;
+    /* Reduzido para melhor foco */
+    margin: 40px auto;
+    /* Margem superior aumentada */
+    padding: 30px;
+    /* Aumento no padding */
+    background-color: #ffffff;
+    border-radius: 12px;
+    /* Cantos mais arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra mais pronunciada */
+}
+
+.logo {
+    width: 80%;
+    margin: auto;
+}
+
+/* Logo */
+.logo img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto;
+    object-fit: cover;
+    /* Espaço maior abaixo da logo */
+}
+
+/* Títulos */
+h5 {
+    text-align: center;
+    color: #007bff;
+    /* Azul padrão do Bootstrap */
+    margin-bottom: 20px;
+    /* Espaço abaixo do título */
+}
+
+h4 {
+    text-align: center;
+    color: #6c757d;
+    /* Cor cinza para subtítulo */
+    margin-bottom: 15px;
+    /* Espaço abaixo do subtítulo */
+}
+
+/* Estilo dos botões */
+.btn {
+    display: block;
+    margin: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 6px;
+    /* Padding maior para botões */
+    font-size: 12px;
+    /* Aumento no tamanho da fonte */
+    color: #ffffff;
+    background-color: #28a745;
+    /* Verde */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    /* Efeitos de transição */
+    width: 20%;
+}
+
+
+.btn_v {
+    display: block;
+    margin: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 6px;
+    /* Padding maior para botões */
+    font-size: 12px;
+    /* Aumento no tamanho da fonte */
+    color: #ffffff;
+    background-color: #a72828;
+    /* Verde */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    /* Efeitos de transição */
+    width: 20%;
+}
+
+.btn_v:hover {
+    background-color: #882121;
+    /* Verde escuro ao passar o mouse */
+    transform: translateY(-2px);
+    /* Efeito de movimento ao passar o mouse */
+}
+
+.btn:hover {
+    background-color: #218838;
+    /* Verde escuro ao passar o mouse */
+    transform: translateY(-2px);
+    /* Efeito de movimento ao passar o mouse */
+}
+
+.submit {
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 12px 20px;
+    /* Padding maior para botões */
+    font-size: 14px;
+    /* Aumento no tamanho da fonte */
+    color: #ffffff;
+    background-color: #28a745;
+    /* Verde */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    /* Efeitos de transição */
+}
+
+.bt {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilização do formulário */
+form {
+    margin-bottom: 30px;
+    /* Espaço maior abaixo do formulário */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    /* Negrito para as labels */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    /* Aumento no padding */
+    border: 1px solid #ced4da;
+    /* Bordas mais suaves */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    /* Espaço maior abaixo do input */
+    transition: border-color 0.3s;
+    /* Efeito de transição */
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    /* Azul ao focar */
+    outline: none;
+    /* Remove o contorno padrão */
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #dee2e6;
+    /* Cor padrão da tabela do Bootstrap */
+    padding: 12px;
+    /* Aumento no padding das células */
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    /* Azul para o cabeçalho */
+    color: #ffffff;
+    /* Texto branco no cabeçalho */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+    /* Cor de fundo alternada para as linhas */
+}
+
+tbody tr:hover {
+    background-color: #e2e6ea;
+    /* Cor de fundo ao passar o mouse */
+}
+
+.pagination {
+    margin: 20px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.pagination a {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: 1px solid #28a745;
+    /* Verde */
+    color: #28a745;
+    /* Verde */
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-flex;
+    /* Garante que os itens fiquem na mesma linha */
+    align-items: center;
+    /* Alinha o conteúdo verticalmente */
+    justify-content: center;
+    /* Garante que o conteúdo fique centralizado */
+}
+
+.pagination a i {
+    /* Caso esteja usando ícones dentro da tag <a> */
+    font-size: 16px;
+    /* Ajuste o tamanho dos ícones */
+    vertical-align: middle;
+    /* Garante que o ícone não sobreponha o texto */
+}
+
+.pagination a.active {
+    background-color: #28a745;
+    /* Verde */
+    color: #ffffff;
+    /* Branco */
+}
+
+.pagination a:hover {
+    background-color: #218838;
+    /* Verde escuro */
+    color: #ffffff;
+    /* Branco */
+}

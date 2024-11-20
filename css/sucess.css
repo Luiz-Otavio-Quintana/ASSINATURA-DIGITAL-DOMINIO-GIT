@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #28a745;
+    /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    /* Cor de fundo leve */
+}
+
+.todo {
+    width: 90%;
+    /* Largura responsiva */
+    max-width: 600px;
+    /* Largura máxima para evitar excesso em telas grandes */
+    margin: 20px auto;
+    /* Margem superior e inferior */
+    border: 2px solid #28a745;
+    /* Borda da div */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    padding: 20px;
+    /* Espaçamento interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra mais suave */
+    background-color: #ffffff;
+    /* Fundo branco para contraste */
+    transition: box-shadow 0.3s;
+    /* Transição suave para a sombra */
+}
+
+.todo:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Efeito ao passar o mouse */
+}
+
+.logo {
+    width: 50%;
+    /* Largura da logo */
+    margin: 20px auto;
+    /* Margens automáticas para centralização */
+}
+
+.logo img {
+    width: 100%;
+    /* Ocupa 100% da largura do contêiner */
+    border-radius: 5px;
+    /* Bordas arredondadas para a imagem */
+}
+
+h1 {
+    color: #28a745;
+    /* Cor do título */
+    margin-bottom: 20px;
+    font-size: 24px;
+    /* Aumenta o tamanho da fonte do título */
+    font-weight: bold;
+    /* Deixa o título em negrito */
+}
+
+.error-container {
+    max-width: 600px;
+    /* Largura máxima para a div */
+    margin: 20px auto;
+    /* Centraliza a div com margem */
+    padding: 20px;
+    /* Espaçamento interno */
+    border: 2px solid #c9fcd5;
+    /* Borda da div */
+    background-color: #ccfed7;
+    /* Fundo da div */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    display: inline-block;
+    /* Permite que a div se ajuste ao conteúdo */
+    transition: background-color 0.3s;
+    /* Transição suave para o fundo */
+}
+
+.error-container:hover {
+    background-color: #d1fae5;
+    /* Efeito ao passar o mouse */
+}
+
+.error-message {
+    font-size: 16px;
+    /* Tamanho da fonte */
+    line-height: 1.5;
+    /* Espaçamento entre linhas */
+    color: #721c24;
+    /* Cor do texto da mensagem de erro */
+}
+
+p {
+    color: #2b2b2b;
+}
+
+/* Estilos para tornar a página responsiva */
+@media (max-width: 768px) {
+    .todo {
+        width: 95%;
+        /* Ajusta a largura em telas menores */
+    }
+
+    .logo {
+        width: 60%;
+        /* Aumenta a largura da logo em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .todo {
+        width: 100%;
+        /* Ocupa 100% da largura em telas muito pequenas */
+    }
+
+    .logo {
+        width: 70%;
+        /* Aumenta ainda mais a largura da logo */
+    }
+}

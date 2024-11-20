@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #721c24;
+    /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    /* Cor de fundo leve */
+}
+
+.todo {
+    width: 90%;
+    /* Largura responsiva */
+    max-width: 600px;
+    /* Largura máxima */
+    margin: 20px auto;
+    /* Centraliza e adiciona margens superior e inferior */
+    border: 2px solid #721c24;
+    /* Borda */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    padding: 20px;
+    /* Espaçamento interno */
+    background-color: #ffffff;
+    /* Fundo branco */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Transição suave na sombra */
+}
+
+.todo:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Sombra mais forte ao passar o mouse */
+}
+
+.logo {
+    width: 50%;
+    margin: 20px auto;
+    /* Centraliza a logo com margens */
+}
+
+.logo img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    /* Bordas arredondadas para a imagem */
+}
+
+h1 {
+    color: #c82333;
+    /* Cor do título */
+    margin-bottom: 20px;
+    font-size: 24px;
+    /* Tamanho do título */
+    font-weight: bold;
+    /* Negrito no título */
+}
+
+.error-container {
+    max-width: 600px;
+    /* Largura máxima da div */
+    margin: 20px auto;
+    /* Centraliza com margem */
+    padding: 20px;
+    /* Espaçamento interno */
+    border: 2px solid #f5c6cb;
+    /* Borda */
+    background-color: #f8d7da;
+    /* Fundo */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    transition: background-color 0.3s ease-in-out;
+    /* Transição suave no fundo */
+}
+
+.error-container:hover {
+    background-color: #f1b0b7;
+    /* Efeito de hover no fundo */
+}
+
+.error-message {
+    font-size: 16px;
+    /* Tamanho da fonte */
+    line-height: 1.5;
+    /* Espaçamento entre linhas */
+    color: #721c24;
+    /* Cor da mensagem de erro */
+}
+
+/* Estilos para tornar a página responsiva */
+@media (max-width: 768px) {
+    .todo {
+        width: 95%;
+        /* Ajusta a largura em telas menores */
+    }
+
+    .logo {
+        width: 60%;
+        /* Ajusta o tamanho da logo */
+    }
+}
+
+@media (max-width: 480px) {
+    .todo {
+        width: 100%;
+        /* Ocupa toda a largura da tela */
+    }
+
+    .logo {
+        width: 70%;
+        /* Ajusta a largura da logo em telas muito pequenas */
+    }
+}
